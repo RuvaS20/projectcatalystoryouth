@@ -555,7 +555,7 @@ div:has(> .container) {
 }
 
 .descriptionabt {
-    background-image: linear-gradient(rgba(112, 38, 131, 0.7), rgba(133, 133, 133, 0.4)), url(/images/IMG_9736.jpeg);
+    background-image: linear-gradient(rgba(112, 38, 131, 0.7), rgba(133, 133, 133, 0.4)), url(images/IMG_9736.jpeg);
     padding-top: 390px;
     background-size: cover;
     background-position: center;
@@ -788,7 +788,7 @@ div:has(> .container) {
 }
 
 .summer {
-    background-image: url("/images/books.jpeg");
+    background-image: url("images/books.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -810,7 +810,7 @@ div:has(> .container) {
 }
 
 .summ {
-    background-image: url("images/Build-A-Bear event background.png");
+    background-image: url("images/Build-A-Bear-event-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -967,7 +967,7 @@ div:has(> .container) {
     height: 90vh;
     width: auto;
     position: relative;
-    background-image: linear-gradient(rgba(112, 38, 131, 0.5), rgba(112, 38, 131, 0.5)), url("/images/IMG_9721.jpg");
+    background-image: linear-gradient(rgba(112, 38, 131, 0.5), rgba(112, 38, 131, 0.5)), url("images/IMG_9721.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1865,7 +1865,7 @@ div:has(> .container) {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(112, 38, 131, .92), rgba(123, 120, 124, 0.6)), url("/images/Home page view.png");
+    background-image: linear-gradient(rgba(112, 38, 131, .92), rgba(123, 120, 124, 0.6)), url("images/Home-page-view.png");
     height: 100vh;
 }
 

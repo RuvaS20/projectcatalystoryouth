@@ -456,44 +456,6 @@ div:has(> .container) {
     
 }
 
-/*
-
-.ADA {
-    background: transparent;
-    border-radius: 15px;
-    size: 50px;
-    margin-left: 15px;
-    border-color: white;
-    padding: 7px 20px;
-    font-size: 20px;
-    color: white;
-    margin-top: 10px;
-    width: 150px;
-    transition: 0.5s ease-in-out;
-}
-
-.ADA:hover {
-    color: rgb(255, 186, 39);
-    
-}
-*/
-
-body.access-mode {
-    background-color: #121212 !important;
-    color: #ffffff !important;
-    font-size: 120% !important;
-    font-family: Arial, sans-serif !important;
-}
-
-body.access-mode .name, 
-body.access-mode .slide a {
-    color: rgb(255, 255, 0) !important;
-}
-
-body.access-mode .hero {
-    background-image: none !important;
-    background-color: #121212 !important;
-}
 
 .learn-more {
     background: transparent;
@@ -1955,18 +1917,6 @@ div:has(> .container) {
     position: absolute;
 }
 
-.ADA {
-    background: transparent;
-    border-radius: 100px;
-    margin-left: 90px;
-    border-color: white;
-    padding: 7px 20px;
-    font-size: 20px;
-    color: white;
-    margin-top: 350px;
-    width: 210px;
-    position: absolute;
-}
 
 
 

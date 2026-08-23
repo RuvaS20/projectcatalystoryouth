@@ -555,7 +555,7 @@ div:has(> .container) {
 }
 
 .descriptionabt {
-    background-image: linear-gradient(rgba(112, 38, 131, 0.7), rgba(133, 133, 133, 0.4)), url(images/IMG_9736.jpeg);
+    background-image: linear-gradient(rgba(112, 38, 131, 0.7), rgba(133, 133, 133, 0.4)), url(images/auditorium.jpeg);
     padding-top: 390px;
     background-size: cover;
     background-position: center;
@@ -967,7 +967,7 @@ div:has(> .container) {
     height: 90vh;
     width: auto;
     position: relative;
-    background-image: linear-gradient(rgba(112, 38, 131, 0.5), rgba(112, 38, 131, 0.5)), url("images/IMG_9721.jpg");
+    background-image: linear-gradient(rgba(112, 38, 131, 0.5), rgba(112, 38, 131, 0.5)), url("images/volunteers_1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1258,7 +1258,6 @@ div:has(> .container) {
 .story-hero {
     position: relative;
     background-color: #4A1975;
-    background-image: url('images/noise.png'); 
     background-blend-mode: overlay;
     padding: 20px 20px 100px 20px;
     display: flex;

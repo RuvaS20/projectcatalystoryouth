@@ -1,0 +1,5 @@
+# Project Catalyst for Youth
+User-agent: *
+Allow: /
+
+Sitemap: https://projectcatalystforyouth.org/sitemap.xml

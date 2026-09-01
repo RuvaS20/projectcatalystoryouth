@@ -26,56 +26,7 @@ allDropdowns.forEach((targetDropdown) => {
 });
 
 // =========================================
-// 2. CAROUSEL / SLIDER LOGIC
-// =========================================
-let currentSlideIndex = 0;
-document.addEventListener('click', function(event) {
-    const isNext = event.target.id === 'nextBtn' || event.target.closest('#nextBtn');
-    const isPrev = event.target.id === 'prevBtn' || event.target.closest('#prevBtn');
-
-    if (!isNext && !isPrev) return;
-
-    const slides = document.querySelectorAll('.carousel-slide');
-    if (slides.length === 0) return; 
-
-    if (isNext) {
-        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-    } else if (isPrev) {
-        currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-    }
-
-    slides.forEach((slide) => {
-        slide.classList.remove('active');
-    });
-    slides[currentSlideIndex].classList.add('active');
-});
-
-// =========================================
-// 3. HOTSPOT DOTS LOGIC
-// =========================================
-const dots = document.querySelectorAll('.pulse-dot');
-dots.forEach(dot => {
-    dot.addEventListener('click', function() {
-        const targetId = this.getAttribute('data-target');
-        const targetPanel = document.getElementById(targetId);
-        
-        if (!targetPanel) return;
-
-        const isCurrentlyOpen = targetPanel.classList.contains('active');
-
-        const panels = document.querySelectorAll('.info-panel');
-        panels.forEach(panel => {
-            panel.classList.remove('active');
-        });
-
-        if (!isCurrentlyOpen) {
-            targetPanel.classList.add('active');
-        }
-    });
-});
-
-// =========================================
-// 4. HEADER SCROLL & TEXT FADE LOGIC
+// 2. HEADER SCROLL & TEXT FADE LOGIC
 // =========================================
 let lastScrollTop = 0;
 const header = document.querySelector('.container');
@@ -124,7 +75,7 @@ window.addEventListener('scroll', function() {
 
 
 // =========================================
-// 5. INTERACTIVE MOUSE PARALLAX LOGIC
+// 3. INTERACTIVE MOUSE PARALLAX LOGIC
 // =========================================
 const follower = document.getElementById('instafollow');
 const container = document.querySelector('.instapage');

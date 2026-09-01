@@ -3001,6 +3001,14 @@ div:has(> .container) {
         color: var(--nf-text-gray);
     }
 
+    /* Stacks the Privacy / Sitemap links instead of running them together */
+    .nf-legal-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
     /* Column 2: Social */
     .nf-social-text {
         font-size: 1.05rem;

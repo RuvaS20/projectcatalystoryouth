@@ -6,7 +6,7 @@
    ========================================================== */
 
 :root {
-    --nav-h: 80px;
+    --nav-h: 85px;
     --nav-purple: #4A1975;
     --nav-purple-dark: #611975;
     --nav-lime: #d1ed14;
@@ -59,10 +59,11 @@ img.logo { width: 44px; height: 44px; margin: 0; }
 .name1 {
     margin: 0;
     color: var(--nav-ink);
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 900;
     letter-spacing: 0.5px;
     white-space: nowrap;
+    padding-left: 26px;
 }
 
 .name-for {
@@ -70,7 +71,7 @@ img.logo { width: 44px; height: 44px; margin: 0; }
     font-family: Georgia, serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 28px;
     margin: 0 3px;
 }
 
@@ -90,14 +91,14 @@ img.logo { width: 44px; height: 44px; margin: 0; }
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0 18px;
+    padding: 0 20px;
 }
 
 .slide a,
 .slide summary {
     text-decoration: none;
     color: var(--nav-ink);
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 800;
     letter-spacing: 0.5px;
     text-transform: uppercase;

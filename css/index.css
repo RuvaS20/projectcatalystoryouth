@@ -259,6 +259,7 @@
     }
 
     .dsg-btn-primary {
+        margin-top: 20px;
         display: inline-block;
         background-color: #000;
         color: #fff;
@@ -326,6 +327,7 @@
         font-weight: 400;
         line-height: 1.35;
         letter-spacing: -0.02em;
+        text-align: justify;
     }
 
     /* --- World Map --- */

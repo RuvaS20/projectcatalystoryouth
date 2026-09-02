@@ -9,8 +9,25 @@ const fullMenu = document.querySelector('.slide');
 if (menuBtn && fullMenu) {
     menuBtn.addEventListener('click', function(event) {
         event.preventDefault();
-        menuBtn.classList.toggle('active');
-        fullMenu.classList.toggle('open');
+        const open = menuBtn.classList.toggle('active');
+        fullMenu.classList.toggle('open', open);
+        menuBtn.setAttribute('aria-expanded', String(open));
+    });
+
+    // Close the panel after following a link, and on Escape
+    fullMenu.addEventListener('click', function(event) {
+        if (!event.target.closest('a')) return;
+        menuBtn.classList.remove('active');
+        fullMenu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+    });
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key !== 'Escape' || !fullMenu.classList.contains('open')) return;
+        menuBtn.classList.remove('active');
+        fullMenu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.focus();
     });
 }
 

@@ -1,0 +1,399 @@
+/* programs.html
+   Split out of style.css. Load order: base.css, nav.css, then this file. */
+/*Programs*/
+
+.screen {
+    height: 90vh;
+    width: auto;
+    position: relative;
+    background-image: linear-gradient(rgba(112, 38, 131, 0.5), rgba(112, 38, 131, 0.5)), url("../images/volunteers_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prog {
+    position: absolute;
+    width: 250px;
+    color: white;
+    margin-left: 15px;
+    animation: blurFadeIn 4s ease-out;
+    font-size: 15px;
+}
+
+.pro {
+    color: white;
+    width: 260px;
+    margin-top: 350px;
+    position: absolute;
+    text-align: right;
+    right: 15px;
+    animation: blurFadeIn 4s ease-out;
+    font-size: 15px;
+}
+
+.chan {
+    color: rgb(255, 186, 39);
+    background-color: #603479;
+}
+
+.ser {
+    font-size: 30px;
+    margin-top: 170px;
+    position: absolute;
+    font-family: var(--font-primary);
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  margin-left: 15px;
+  animation: blurFadeIn 2s ease-out;
+}
+
+.serv {
+    color: white;
+    position: absolute;
+    margin-top: 210px;
+    font-size: 40px;
+    margin-left: 80px;
+    animation: blurFadeIn 2s ease-out;
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.req {
+    background-color: rgb(255, 186, 39);
+    border-radius: 100px;
+    border-color: rgb(255, 186, 39);
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    margin-top: 470px;
+    animation: blurFadeIn 1s ease-out;
+}
+
+.req:hover {
+    background-color: rgb(206, 141, 0);
+    border-color: white;
+}
+
+
+.programs-wrapper {
+    width: 100%;
+    background-color: white; 
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-primary);
+}
+
+.program-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+
+.prog-img {
+    width: 100%;
+    height: 40vh; 
+    min-height: 300px;
+    background-color: rgb(112, 38, 131);
+    overflow: hidden;
+    z-index: 3;
+}
+
+.prog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.prog-text {
+    width: 100%;
+    padding: 50px 20px 80px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.prog-number {
+    font-size: 70px;
+    color: rgb(255, 186, 39);
+    margin: 0;
+    line-height: 0.8;
+    font-weight: 900;
+    opacity: 0.6; 
+}
+
+.prog-subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+.prog-title {
+    font-size: 32px;
+    color: rgb(74, 25, 117); 
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.prog-desc {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.dontb {
+    height: fit-content;
+    padding: 15px;
+    background-color: #6f169f;
+}
+@media (max-width: 850px) {
+
+.googleform img {
+    margin-top: 20px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+.forms img
+ {
+    height: 148px;
+}
+
+.hygiene img {
+    height: 135px;
+    
+}
+}
+
+
+.letter {
+    background: transparent;
+    border-radius: 100px;
+    size: 50px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    width: 200px;
+    transition: 0.5s ease-in-out;
+}
+
+.afraid {
+    font-size: 32px;
+    color: #f3cf6d; 
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.penpal {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #adc5f5;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+.dontbe {
+    font-size: 16px;
+    color: white;
+    line-height: 1.8;
+    margin: 0;
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+
+.letter:hover {
+    background-color: #f3cf6d;
+    color: #6f169f;
+}
+
+.package {
+    height: fit-content;
+    padding: 15px;
+    background-color: #6f169f;
+}
+
+.letters {
+    background: transparent;
+    border-radius: 100px;
+    size: 50px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    width: 240px;
+    transition: 0.5s ease-in-out;
+}
+
+.letters:hover {
+    background-color: #f3cf6d;
+    color: #6f169f;
+}
+@media (min-width: 850px) {
+    .program-row {
+        flex-direction: row; 
+        height: 75vh;
+        min-height: 600px;
+    }
+
+
+    .program-row.reverse {
+        flex-direction: row-reverse; 
+    }
+
+
+    .prog-img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .prog-text {
+        width: 50%;
+        padding: 0 8%;
+    }
+
+    .prog-number {
+        font-size: 100px;
+    }
+
+    .prog-title {
+        font-size: 48px;
+    }
+
+    .prog-desc {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 850px) {
+
+/*programs*/
+
+.pro {
+    font-size: 25px;
+    margin-top: 270px;
+    width: 350px;
+}
+
+.prog {
+    font-size: 25px;
+    margin-top: 20px;
+    width: 350px;
+}
+
+.butt {
+    position: absolute; 
+    width: 100%; 
+    bottom: 200px; 
+    left: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    z-index: 50;
+}
+
+.screen {
+    height: 100vh;
+}
+
+.req {
+    margin: 0 !important;
+    position: relative !important;
+    left: auto !important;
+    transform: none !important;
+}
+
+.ser {
+    font-size: 60px; 
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important; 
+    text-align: center;
+    width: 100%;
+}
+
+.serv {
+    font-size: 80px; 
+    color: white;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important; 
+    text-align: center;
+    width: 100%;
+}
+
+.dontb {
+    width: 100%;
+    height: 100vh;
+    padding-right: 0px;
+}
+
+.dontbe {
+    width: 600px;
+}
+
+.letter {
+    margin-top: 40px;
+}
+
+.letters {
+    margin-top: 40px;
+}
+
+.package {
+    width: 100%;
+    height: 100vh;
+    padding-right: 0px;
+}
+
+.dontbe {
+    font-size: 20px;
+}
+
+.googleform {
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 700px;
+    
+    
+}
+
+.googleform img {
+    width: 500px;
+    border-radius: 30px;
+}
+
+.hygiene {
+    margin-top: -250px;
+}
+}

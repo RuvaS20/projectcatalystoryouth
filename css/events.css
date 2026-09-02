@@ -1,0 +1,259 @@
+/* events.html
+   Split out of style.css. Load order: base.css, nav.css, then this file. */
+@media (max-width: 850px) {
+.summer {
+    background-color: white;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 186, 39);
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+}
+
+
+.pnp {
+    margin-left: 80px;
+    margin-top: 25px;
+}
+
+.date {
+    margin-left: 80px;
+    top: 40px;
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+}
+
+.desc {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.million {
+    margin-top: 160px;
+}
+
+.highlight {
+    background-color: rgba(220, 130, 255, 0.795);
+    color: white;
+}
+
+.summer {
+    background-image: url("../images/books.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    height: 50vh;
+}
+
+.summe {
+    background-color: #603479;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    height: 65vh;
+}
+
+.summ {
+    background-image: url("../images/Build-A-Bear-event-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    height: 65vh;
+}
+
+.donat {
+    color: orchid;
+    background: white;
+    border-radius: 100px;
+    margin-left: 15px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    margin-top: 260px;
+    width: 150px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    font-size: 20px;
+    animation: blurFadeIn 4s ease-out;
+}
+
+.dona {
+    color: orchid;
+    background: white;
+    border-radius: 100px;
+    margin-left: 15px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    margin-top: 160px;
+    width: 150px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    font-size: 20px;
+    animation: blurFadeIn 4s ease-out;
+}
+
+.rathern {
+    width: 225px;
+    color: orchid;
+    background: white;
+    border-radius: 100px;
+    margin-left: 15px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    margin-top: 270px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    font-size: 20px;
+    animation: blurFadeIn 4s ease-out;
+}
+@media (max-width: 850px) {
+
+   .desca {
+    margin-top: 120px;
+   }
+}
+
+@media (min-width: 850px) {
+
+
+/*Events page*/
+
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 186, 39);
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    animation: blurFadeIn 2s ease-out;
+}
+
+.pnp {
+    font-size: 40px;
+    margin-left: 140px;
+    margin-top: 30px;
+    position: absolute;
+    animation: blurFadeIn 4s ease-out;
+}
+
+.date {
+    margin-top: 50px;
+    margin-left: 140px;
+    font-size: 25px;
+    animation: blurFadeIn 4s ease-out;
+}
+
+
+
+.desc {
+    margin-top: 40px;
+    margin-left: 500px;
+    position: absolute;
+    font-size: 30px;
+    width: 700px;
+    animation: blurFadeIn 4s ease-out;
+}
+
+.million {
+    margin-top: 150px;
+}
+
+.rathern {
+    margin-top: 290px;
+    color: orchid;
+    background: white;
+    border-radius: 100px;
+    margin-left: 970px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 16px;
+    width: 225px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    font-size: 20px;
+    animation: blurFadeIn 4s ease-out;
+}
+
+.dona {
+    color: orchid;
+    background: white;
+    border-radius: 100px;
+    margin-left: 970px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    margin-top: 180px;
+    width: 215px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    font-size: 20px;
+    animation: blurFadeIn 4s ease-out;
+}
+
+
+.dona:hover, .donat:hover, .rathern:hover {
+    color:rgb(255, 186, 39);
+}
+
+
+
+.donat {
+    color: orchid;
+    background: white;
+    border-radius: 100px;
+    margin-left: 970px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    margin-top: 230px;
+    width: 150px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    font-size: 20px;
+    animation: blurFadeIn 4s ease-out;
+}
+}

@@ -1,0 +1,9 @@
+/* privacypolicy.html
+   Split out of style.css. Load order: base.css, nav.css, then this file. */
+.privacy-policy {
+    background-color: #603479;
+    color: white;
+    font-family: var(--font-primary);
+    margin-left: 15px;
+    margin-right: 15px;
+}

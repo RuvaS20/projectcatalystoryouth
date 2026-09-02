@@ -1,0 +1,113 @@
+/* donate.html
+   Split out of style.css. Load order: base.css, nav.css, then this file. */
+.do {
+    background-color: #4A1975;
+    height: 850px;
+}
+
+/*Donate page*/
+
+.toget {
+    font-size: 40px;
+    position: absolute;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    animation: blurFadeIn 4s ease-out;
+    margin-top: 180px;
+}
+
+.shiv{
+    height: 250px;
+    width: 250px;
+    margin-top: 180px;
+    margin-left: 70px;
+    object-fit:cover;
+    object-position: top center;
+    animation: blurFadeIn 4s ease-out;
+}
+
+.gofund { 
+    background: transparent;
+    border-radius: 100px;
+    margin-left: 15px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.gofund:hover {
+    color: rgb(255, 186, 39);
+}
+
+.venmo { 
+    
+    border-radius: 100px;
+    margin-left: 15px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: rgba(128, 0, 128);
+    margin-top: 10px;
+    width: 150px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    background: white;
+}
+
+.venmo:hover {
+    color: rgb(255, 186, 39);
+}
+
+.non-mon {
+    background: transparent;
+    border-radius: 100px;
+    margin-left: 15px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    width: 200px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.non-mon:hover {
+    color: rgb(255, 186, 39);
+}
+
+.donpg {
+    height: 543px;
+}
+@media (min-width: 850px) {
+
+.toget {
+    width: 650px;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.buttt {
+    margin-left: 750px;
+    margin-top: 25px;
+    position: absolute;
+}
+
+.shiv {
+    width: 500px;
+    height: 500px;
+    margin-top: 90px;
+    margin-left: 700px;
+    position: absolute;
+}
+}

@@ -1,0 +1,621 @@
+/* index.html
+   Split out of style.css. Load order: base.css, nav.css, then this file. */
+@media (max-width: 850px) {
+.hero {
+    background-image: linear-gradient(rgba(112, 38, 131, .4), rgba(123, 120, 124, 0.2)), url(../images/backgroundhome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    min-height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    
+}
+}
+
+
+.mission {
+
+    font-size: 25px;
+    width: 260px;
+    margin-left: 15px;
+    margin-top: 30px;
+
+    color: rgb(255, 255, 255);
+    transition: opacity 1s ease-in;
+    opacity: 1;
+    font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    animation: blurFadeIn 1.2s ease-out;
+}
+
+.donate {
+    background: transparent;
+    border-radius: 100px;
+    size: 50px;
+    margin-left: 15px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 210px;
+    width: 150px;
+    transition: 0.5s ease-in-out;
+}
+
+.donate:hover {
+    color: rgb(255, 186, 39);
+    
+}
+
+
+.learn-more {
+    background: transparent;
+    border-radius: 100px;
+    size: 50px;
+    margin-left: 15px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    width: 150px;
+    transition: 0.5s ease-in-out;
+}
+
+.learn-more:hover {
+    color: rgb(255, 186, 39);
+    
+}
+
+.fundraise {
+    background-color: rgb(74, 25, 117);
+    margin:  0;
+    padding: 2rem 1.5rem;
+}
+
+.headnin {
+    color: white;
+    font-family: var(--font-primary);
+}
+
+.fundra, .fundray {
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fundd {
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+
+.beary  {
+    height: 250px;
+    width: auto;
+    margin-left: -20px;
+    margin-top: 25px;
+}
+
+.fundbtn {
+    background: transparent;
+    border-radius: 100px;
+    size: 50px;
+    margin-left: 0px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    width: 190px;
+    transition: 0.5s ease-in-out;
+}
+
+.fundbtn:hover {
+    background-color: rgb(255, 186, 39);
+    border-color: rgb(255, 186, 39);
+    color: brown;
+    
+}
+@media (min-width: 850px) {
+
+.hero {
+    background-image: linear-gradient(rgba(112, 38, 131, .92), rgba(123, 120, 124, 0.6)), url("../images/Home-page-view.png");
+    height: 100vh;
+}
+
+.donate {
+    background: transparent;
+    border-radius: 100px;
+    margin-left: 90px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 405px;
+    width: 150px;
+    position: absolute;
+}
+
+.learn-more {
+    background: transparent;
+    border-radius: 100px;
+    margin-left: 270px;
+    border-color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 380px;
+    width: 150px;
+    position: absolute;
+}
+
+
+
+
+.headnin {
+    font-size: 50px;
+    width: 700px;
+}
+
+.fundraise {
+    height: 90vh;
+}
+
+.fundra {
+    font-size: 30px;
+    width: 550px;
+    margin-top: -280px;
+}
+
+.fundbtn {
+    margin-top: 0px;
+}
+
+.fundray {
+    font-size: 30px;
+}
+
+.beary {
+    height: 550px;
+    margin-top: -280px;
+    margin-left: 700px;
+}
+
+.mission {
+    margin-top: -20px;
+    margin-left: 90px;
+    font-size: 70px;
+    width: 1100px;
+    animation: blurFadeIn 1.2s ease-out;
+}
+}
+
+
+
+
+/* ============================================================
+   Ported from design.html - mission / story / world map
+   Classes are namespaced "dsg-" because .container and
+   .hero-section already mean something else in this stylesheet.
+   ============================================================ */
+
+/* Scoped stand-in for design.html's global * and body resets,
+   so it cannot leak into the rest of the site. */
+.dsg-root {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dsg-root *,
+.dsg-root *::before,
+.dsg-root *::after {
+    box-sizing: border-box;
+}
+
+.dsg-root h1,
+.dsg-root h2,
+.dsg-root h3,
+.dsg-root p {
+    margin: 0;
+    padding: 0;
+}
+
+    .dsg-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    /* --- Top Hero Section --- */
+    .dsg-hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 0 80px 0;
+    }
+
+    .dsg-hero-headline {
+        font-size: clamp(2.5rem, 4.5vw, 4.5rem); /* Responsive sizing */
+        font-weight: 500; /* Medium weight */
+        line-height: 1.05; /* Tight line height */
+        letter-spacing: -0.04em; /* Tight letter spacing */
+        max-width: 1100px;
+        margin-bottom: 40px;
+    }
+
+    .dsg-btn-primary {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        padding: 14px 28px;
+        border-radius: 50px; /* Pill shape */
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        transition: opacity 0.2s ease;
+    }
+
+    .dsg-btn-primary:hover {
+        opacity: 0.8;
+    }
+
+    /* --- Full Width Divider --- */
+    .dsg-section-divider {
+        border: 0;
+        height: 1px;
+        background-color: var(--color-divider);
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    /* --- Bottom Content Section --- */
+    .dsg-content-section {
+        padding-bottom: 120px;
+    }
+
+    .dsg-split-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+@media (min-width: 900px) {
+        .dsg-split-layout {
+            flex-direction: row;
+            gap: 120px;
+        }
+}
+
+
+    .dsg-sidebar {
+        flex: 0 0 auto;
+        width: 150px;
+    }
+
+    .dsg-sidebar-label {
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .dsg-main-text {
+        flex: 1;
+        max-width: 850px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .dsg-paragraph {
+        font-size: clamp(1.2rem, 2vw, 1.8rem);
+        font-weight: 400;
+        line-height: 1.35;
+        letter-spacing: -0.02em;
+    }
+
+    /* --- World Map --- */
+    .dsg-map-section {
+        padding-bottom: 120px;
+    }
+
+    /* Positioning context so the title can sit over the map */
+    .dsg-map-stage {
+        position: relative;
+        max-width: 808px; /* 15% down from the map's native 950px */
+        margin: 0 auto;
+    }
+
+    .dsg-world-map {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .dsg-world-map path {
+        fill: var(--color-map-fill);
+        stroke: var(--color-map-stroke);
+        stroke-width: 0.6;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke; /* hairline borders at any size */
+        transition: fill 0.5s; /* the original map's half-second fade */
+    }
+
+    .dsg-world-map path:hover {
+        fill: var(--color-purple);
+    }
+
+    .dsg-map-overlay-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        /* Matches .dsg-hero-headline's weight, size and tracking */
+        font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+        font-weight: 500;
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+        pointer-events: none; /* lets hover reach the countries underneath */
+    }
+
+/* Scoped stand-in for new.html's global * and body rules,
+   so they cannot leak onto the other nine pages. */
+.nf-root {
+    background-color: var(--nf-bg-color);
+    color: var(--nf-text-black);
+    font-family: var(--nf-font-body);
+    -webkit-font-smoothing: antialiased;
+}
+
+.nf-root *,
+.nf-root *::before,
+.nf-root *::after {
+    box-sizing: border-box;
+}
+
+.nf-root h1, .nf-root h2, .nf-root h3, .nf-root p {
+    margin: 0;
+    padding: 0;
+}
+
+    /* --- Layout Container --- */
+    .nf-site-footer {
+        padding: 80px 5% 60px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* =========================================
+       TOP SECTION: CTA
+       ========================================= */
+    .nf-footer-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 60px;
+        margin-bottom: 80px;
+    }
+@media (min-width: 900px) {
+        .nf-footer-top {
+            flex-direction: row;
+            align-items: center;
+        }
+}
+
+
+    /* Left Side: Giant Text */
+    .nf-giant-headline {
+        font-family: var(--nf-font-display);
+        font-size: clamp(4rem, 10vw, 8.5rem);
+        line-height: 0.95;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    /* Right Side: Project Info */
+    .nf-project-cta {
+        max-width: 450px;
+    }
+
+    .nf-project-cta h2 {
+        font-size: clamp(1.8rem, 3vw, 2.2rem);
+        font-weight: 600;
+        margin-bottom: 20px;
+        letter-spacing: -0.02em;
+    }
+
+    .nf-project-cta p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 35px;
+    }
+
+    /* Button Styling */
+    .nf-btn-yellow {
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--nf-pcy-purple);
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 16px 32px;
+        border-radius: 50px;
+        transition: transform 0.2s ease, background-color 0.2s;
+    }
+
+    .nf-btn-yellow:hover {
+        transform: translateY(-2px);
+        background-color: var(--nf-pcy-purple-hover);
+    }
+
+    .nf-btn-icon-wrapper {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        margin-left: 12px;
+    }
+
+    .nf-btn-icon-wrapper svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* =========================================
+       DIVIDER LINE
+       ========================================= */
+    .nf-footer-divider {
+        border: none;
+        height: 1px;
+        background-color: var(--nf-border-color);
+        margin-bottom: 60px;
+    }
+
+    /* =========================================
+       BOTTOM SECTION: INFO COLUMNS
+       ========================================= */
+    .nf-footer-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+@media (min-width: 768px) {
+        .nf-footer-bottom {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+}
+
+
+    /* Common Column Styles */
+    .nf-col-heading {
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    /* Custom Underline Links */
+    .nf-link-underline {
+        color: var(--nf-text-gray);
+        text-decoration: underline;
+        text-decoration-color: var(--nf-pcy-purple);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
+        font-size: 1.05rem;
+        transition: color 0.2s;
+    }
+
+    .nf-link-underline:hover {
+        color: var(--nf-text-black);
+    }
+
+    /* Column 1: Contact */
+    .nf-address-block {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 1.7;
+        font-size: 1.05rem;
+    }
+
+    .nf-company-name {
+        color: var(--nf-text-black);
+        font-weight: 500;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .nf-address-lines {
+        color: var(--nf-text-gray);
+    }
+
+    /* Stacks the Privacy / Sitemap links instead of running them together */
+    .nf-legal-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    /* Column 2: Social */
+    .nf-social-text {
+        font-size: 1.05rem;
+        margin-bottom: 20px;
+    }
+
+    .nf-social-icons-container {
+        display: flex;
+        gap: 15px;
+    }
+
+    .nf-social-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--nf-text-gray);
+        border-radius: 50%;
+        color: var(--nf-text-gray);
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .nf-social-icon:hover {
+        border-color: var(--nf-text-black);
+        color: var(--nf-text-black);
+    }
+
+    .nf-social-icon svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+
+    /* Column 3: Newsletter */
+    .nf-newsletter-text {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .nf-signup-link {
+        display: inline-flex;
+        align-items: center;
+        color: var(--nf-text-black);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .nf-signup-link::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 1px;
+        background-color: var(--nf-text-black);
+        margin-right: 15px;
+    }

@@ -1,0 +1,279 @@
+/* about-us.html
+   Split out of style.css. Load order: base.css, nav.css, then this file. */
+/* About us page */
+
+.fade-text {
+    /* Tells the browser to optimize this text for smooth fading */
+    will-change: opacity;
+    transition: opacity 0.1s ease-out;
+}
+
+.descriptionabt {
+    background-image: linear-gradient(rgba(112, 38, 131, 0.7), rgba(133, 133, 133, 0.4)), url(../images/auditorium.jpeg);
+    padding-top: 390px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.abt {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    animation: blurFadeIn 4s ease-out;
+    padding: 20px;
+}
+
+.writeabt {
+    background-color: rgb(74, 25, 117);
+    height: 430px;
+    padding-top: 20px;
+}
+
+.fr {
+    color: white;
+    font-family: var(--font-primary);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    position: absolute;
+    position: absolute;
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+
+.fr2 {
+    color: white;
+    font-family: var(--font-primary);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    position: absolute;
+    position: absolute;
+    margin-top: 140px;
+    font-family: var(--font-primary);
+    font-weight: bold; 
+}
+
+.at {
+    margin-left: 10px;
+    color: rgb(255, 186, 39);
+    font-family: var(--font-primary);
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    /* This gap controls how far apart they are before you scroll */
+    gap: 60px; 
+    max-width: 1100px;
+    margin: 80px auto; 
+    padding: 0 20px 100px 20px;
+    background-color: white;
+    
+}
+
+.mission-card {
+    display: flex;
+    flex-direction: column; 
+    background-color: #603479;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 50px;
+    
+    /* 1. THE MAGIC RULE: Makes the cards stick instead of scrolling past */
+    position: sticky; 
+    
+    /* 2. THE 3D SHADOW: Puts a shadow on the TOP of the card to cast onto the one behind it */
+    box-shadow: 0 -15px 40px rgba(0,0,0,0.3);
+}
+
+.card-title {
+    font-family: var(--font-primary);
+    font-weight: bold;
+    color: rgb(255, 186, 39);
+    margin-left: 25px;
+    font-size: 20px
+}
+
+.mission-image {
+    width: 100%;
+    
+}
+
+.mission-image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.mission-content {
+    padding: 40px 30px;
+    color: white;
+    font-family: var(--font-primary);
+    display: flex;
+    align-items: center; 
+}
+
+.mission-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.mission-card:nth-child(1) { top: 120px; }
+.mission-card:nth-child(2) { top: 150px; } 
+.mission-card:nth-child(3) { top: 180px; } 
+
+.follow {
+        width: 80%; 
+        margin: 0 auto; 
+        text-align: center;
+        height: 15vh;
+        justify-content: center;
+    align-items: center;
+    }
+
+    .follow-us {
+        text-align: center;
+        color: purple;
+        font-family: var(--font-primary);
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .instapage {
+    position: relative; 
+    width: 100%;
+    height: 580px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#instafollow {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 300px;
+    z-index: 5;
+    pointer-events: none; 
+    transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+@media (min-width: 850px) {
+
+
+
+/*About us*/
+
+.abt {
+    margin-top: 400px;
+    color: white;
+    font-size: 60px;
+    margin-left: 20px;
+    animation: blurFadeIn 4s ease-out;
+    margin-top: -20px;
+}
+
+.descriptionabt {
+    background-color: rgb(74, 25, 117);
+    height: 45vh;
+}
+
+.fr {
+    font-size: 40px;
+    width: 600px;
+    position: absolute;
+    margin-top: 80px;
+}
+
+.at {
+    margin-left: 50px;
+    font-size: 30px;
+    position: absolute;
+}
+
+.fr2 {
+    font-size: 40px;
+    width: 600px;
+    position: absolute;
+    margin-top: 350px;
+}
+
+.writeabt {
+    background-color: rgb(74, 25, 117);
+    height: 100vh;
+}
+
+.mission-card {
+        flex-direction: row; 
+        height: 400px; 
+    }
+
+    .mission-image {
+        width: 45%; 
+    }
+
+    .mission-image img {
+        width: 400px;
+        height: 600px;
+    }
+
+    .mission-content {
+        width: 55%; 
+        padding: 40px 60px;
+    }
+
+    .mission-content p {
+        font-size: 25px; 
+        margin-left: -15px;
+        position: absolute;
+
+        width: 550px;
+    }
+    .card-title {
+        font-size: 20px;
+        width: 200px;
+        position: absolute;
+        margin-left: 500px;
+        margin-top: 30px;
+    }
+
+    .mission-card:nth-child(1) { top: 180px; }
+    .mission-card:nth-child(2) { top: 220px; } /* 40px visual tab */
+    .mission-card:nth-child(3) { top: 260px; }
+
+    .follow {
+        width: 80%; 
+        margin: 0 auto; 
+        text-align: center;
+        height: 40vh;
+
+    }
+
+    .follow-us {
+        text-align: center;
+        width: 550px;
+        color: purple;
+        font-family: var(--font-primary);
+        margin-top: 200px;
+        font-size: 35px;
+    }
+
+    .instapage {
+        position:absolute;
+        margin-top: -550px;
+        margin-left: 360px;
+    }
+
+     #instafollow {
+        position:absolute;
+     }
+}

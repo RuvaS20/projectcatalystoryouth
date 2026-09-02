@@ -1,0 +1,173 @@
+/* purchase.html
+   Split out of style.css. Load order: base.css, nav.css, then this file. */
+/*Purchase*/
+
+.backg {
+    background-color: rgb(74, 25, 117);
+}
+
+
+.hero-content {
+    margin-top: 15px;
+}
+
+.hero-section { background-color: #603479; color: white; text-align: center; padding: 2rem 1.5rem; }
+.hero-section h1 { color: white; font-size: 2.5rem; margin-bottom: 1rem; }
+.hero-section p { font-size: 1.125rem; max-width: 600px; margin: 0 auto; opacity: 0.9; }
+
+.main-container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+.chosen { color:white; text-align: center;}
+.packages-section { margin-bottom: 3rem; }
+.package-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2rem; color: white;}
+
+.package-card {
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border-top: 6px solid var(--color-primary);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.package-card.ultimate-tier { border-top-color: var(--color-secondary); }
+.price-tag { font-size: 2rem; font-weight: 700; color: var(--color-secondary); margin: 1rem 0; }
+
+.donation-banner {
+  background-color: #e4c1ff;
+  border: 1px solid #c77dff;
+  border-left: 6px solid #844db8;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: var(--font-primary);
+}
+.donation-banner h3 { color: #844db8; margin-bottom: 0.5rem; }
+
+.checkout-section {
+  background-color: var(--color-surface);
+  padding: 2.5rem 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.checkout-instructions { text-align: center; color: var(--color-text-light); margin-bottom: 2rem; }
+
+.form-group { margin-bottom: 1.5rem; }
+.ticket-form label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.95rem; }
+.ticket-form input, .ticket-form select {
+  width: 100%; padding: 0.75rem 1rem; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem;
+}
+.ticket-form input:focus, .ticket-form select:focus {
+  outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+.submit-btn {
+  width: 100%; background-color: var(--color-secondary); color: white; border: none;
+  padding: 1rem; font-size: 1.125rem; font-weight: bold; border-radius: 8px; cursor: pointer; margin-top: 1rem;
+  transition: 1s ease-in-out;
+}
+.submit-btn:hover { background-color: #844db8; }
+.submit-btn:disabled { background-color: #844db8; cursor: not-allowed; }
+
+.checkout-section {
+  background-color: #844db8; /* The deep purple from your preview */
+  color: #ffffff; /* Changed to white for high contrast and readability */
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  max-width: 450px;
+  margin: 2rem auto; /* Centers the form on the page */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-family: var(--font-primary);
+}
+
+/* --- Typography --- */
+.checkout-section h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.checkout-instructions {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  opacity: 0.85; /* Softens the subtext slightly so the heading stands out */
+  line-height: 1.5;
+}
+
+/* --- Form Layout --- */
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column; /* Stacks the label above the input */
+}
+
+.ticket-form label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* --- Input Fields --- */
+.ticket-form input,
+.ticket-form select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #333333;
+  box-sizing: border-box; /* Ensures padding doesn't break the width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interactive Focus States (When a user clicks into a box) */
+.ticket-form input:focus,
+.ticket-form select:focus {
+  outline: none;
+  border-color: #844db8; /* Gives a nice orange accent ring */
+  box-shadow: 0 0 0 3px rgba(108, 0, 180, 0.3); 
+}
+
+/* --- The Submit Button --- */
+.submit-btn {
+  width: 100%;
+  padding: 1.1rem;
+  background-color: transparent; /* Vibrant orange to contrast the purple */
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 1s ease, transform 0.1s ease;
+}
+
+/* Button Hover and Click Effects */
+.submit-btn:hover {
+  background-color: #bc75ff; /* Slightly darker orange on hover */
+}
+
+.submit-btn:active {
+  transform: scale(0.98); /* Satisfying "click" press down effect */
+}
+
+.classes {
+    height: 250px;
+    margin-top: 40px;
+}
+@media (min-width: 850px) {
+
+.classes {
+    height: 600px;
+    margin-top: 40px;
+}
+}

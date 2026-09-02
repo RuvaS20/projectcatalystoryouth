@@ -1,0 +1,281 @@
+/* Shared foundation: tokens, element rules, keyframes, and anything
+   used by more than one page. Load this first. */
+:root {
+    --font-primary: "Google Sans Flex", "Google Sans", -apple-system,
+                    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --color-text: #000000;
+    --color-bg: #ffffff;
+    --color-divider: #efefef;
+    /* Project Catalyst for Youth brand purple */
+    --color-purple: #702683;
+    --color-map-fill: #e7d8ee;
+    --color-map-stroke: #702683;
+}
+
+/* Home page */
+
+@keyframes fadeSlideIn {
+    from { 
+        opacity: 0; 
+        transform: translateX(15px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+@keyframes blurFadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(25px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes breathe {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.03);
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+
+}
+@media (max-width: 850px) {
+
+@keyframes buns {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(5px) scale(1.03);
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+
+}
+}
+
+
+.body::-webkit-scrollbar,
+.bod::-webkit-scrollbar {
+    display: none;
+}
+
+/*Footer*/
+
+.out {
+    background-color: #4A1975;
+    padding-top: 10px;
+    font-family: var(--font-primary);
+}
+
+.company, 
+.contact,
+.legal {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.comp {
+    display: flex;
+    flex-direction: column;
+}
+
+.legality {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.pcy, 
+.reg {
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.ho,
+.p,
+.au,
+.te,
+.pri,
+.email,
+.phone {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.insta {
+    height: 50px;
+    width: auto;
+    margin-left: 20px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.pcy, .reg {
+   margin-left: 20px; 
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+}
+@media (min-width: 850px) {
+
+@keyframes blurFadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(15px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes breathe {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.03);
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@media (min-width: 850px) {
+    
+
+    .class {
+        width: 100%; 
+        height: auto; 
+        min-height: 100vh;
+        padding-bottom: 100px;
+        position: relative; 
+    }
+
+    .mobile-only-view { display: none !important; }
+    .desktop-only-view { display: block !important; }
+
+    .hotspot-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        max-width: 1100px;
+        margin: 150px auto 0 auto;
+        padding: 0 40px;
+    }
+
+    .image-container {
+        position: relative;
+        width: 50%;
+    }
+
+    .hotspot-img {
+        height: 500px;
+        width: auto;
+        border-radius: 35px;
+        display: block;
+        margin-top: -350px;
+    }
+
+    .hotspot-text-area {
+        width: 50%;
+    }
+
+
+    .pulse-dot {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: rgb(74, 25, 117);
+        border: 3px solid white;
+        border-radius: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        z-index: 100 !important;
+        pointer-events: auto !important;
+        transition: ease-in-out;
+    }
+
+    .pulse-dot:hover {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    .info-panel {
+        display: none;
+        background-color: rgb(255, 186, 39); 
+        padding: 10px;
+        padding-left: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2); /* Soft drop shadow */
+        animation: fadeSlideIn 0.4s ease-out;
+        position: relative;
+        z-index: 20;
+    }
+
+}
+
+/*Purchase*/
+@media (min-width: 768px) {
+  .hero-section { padding: 5rem 2rem; }
+  .hero-section h1 { font-size: 3rem; }
+  .package-grid { grid-template-columns: repeat(2, 1fr); }
+  .checkout-section { padding: 3rem; }
+  .classes {
+    height: 600px;
+    margin-top: 40px;
+}
+}
+@media (min-width: 1024px) {
+  .package-grid { grid-template-columns: repeat(4, 1fr); }
+  .package-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
+}
+}
+
+
+
+/* ============================================================
+   Ported from new.html - index.html footer
+   Namespaced "nf-" because .site-footer already means
+   something else in this stylesheet.
+   ============================================================ */
+
+:root {
+
+            --nf-bg-color: #ffffff;      /* matches the mission section in index.html */
+            --nf-text-black: #000000;
+            --nf-text-gray: #5e5e5e;
+            --nf-accent-yellow: #ffda00;
+            --nf-pcy-purple: #702683;    /* Project Catalyst for Youth brand purple */
+            --nf-pcy-purple-hover: #8a2fa1;
+            --nf-border-color: #dfdcd4;
+            --nf-font-display: 'Anton', sans-serif;
+            --nf-font-body: "Google Sans Flex", "Google Sans", -apple-system,
+                         BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}

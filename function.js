@@ -185,10 +185,10 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = paypalUrl;
       })
       .catch(error => {
+        // The record-keeping call failed, but that is our problem, not the
+        // buyer's - send them straight to PayPal without an alarming message.
         console.error('Error saving execution dataset:', error);
-        alert('There was a slight issue recording your info, but you can still complete your payment securely via PayPal!');
-        // Failsafe exit logic: forward them to payment link anyway
-        window.location.href = paypalUrl; 
+        window.location.href = paypalUrl;
       })
       .finally(() => {
         // Safe timeout mechanism to unlock submission buttons if slow connection

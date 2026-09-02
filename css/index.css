@@ -2,7 +2,7 @@
    Split out of style.css. Load order: base.css, nav.css, then this file. */
 @media (max-width: 850px) {
 .hero {
-    background-image: linear-gradient(rgba(112, 38, 131, .4), rgba(123, 120, 124, 0.2)), url(../images/backgroundhome.png);
+    background-image: linear-gradient(rgba(112, 38, 131, .4), rgba(123, 120, 124, 0.2)), url(../images/backgroundhome.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -129,7 +129,7 @@
 @media (min-width: 850px) {
 
 .hero {
-    background-image: linear-gradient(rgba(112, 38, 131, .92), rgba(123, 120, 124, 0.6)), url("../images/Home-page-view.png");
+    background-image: linear-gradient(rgba(112, 38, 131, .92), rgba(123, 120, 124, 0.6)), url("../images/Home-page-view.webp");
     height: 100vh;
 }
 

@@ -70,7 +70,7 @@ img.logo { width: 44px; height: 44px; margin: 0; }
     color: var(--nav-purple);
     font-family: Georgia, serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
     margin: 0 3px;
 }
@@ -99,12 +99,13 @@ img.logo { width: 44px; height: 44px; margin: 0; }
     text-decoration: none;
     color: var(--nav-ink);
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     cursor: pointer;
     list-style: none;
     transition: color 0.2s ease;
+    padding-right: 15px;
 }
 
 .slide summary::-webkit-details-marker { display: none; }

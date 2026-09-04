@@ -621,3 +621,107 @@
         background-color: var(--nf-text-black);
         margin-right: 15px;
     }
+
+/* ---------- Upcoming events (ported from design.html) ----------
+   Namespaced "ev-" because .container already means the nav header.
+   Scoped reset stands in for design.html's global * / body rules.    */
+.ev-root {
+    font-family: var(--font-primary);
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px;
+}
+
+.ev-root *,
+.ev-root *::before,
+.ev-root *::after { box-sizing: border-box; }
+
+.ev-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ev-heading {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    margin: 0 0 24px;
+}
+
+.ev-category-pill {
+    display: inline-block;
+    border: 1px solid #1e293b;
+    color: #1e293b;
+    padding: 8px 24px;
+    border-radius: 9999px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 56px;
+}
+
+.ev-event-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.ev-event-info-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.ev-date-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 72px;
+    height: 78px;
+    padding: 8px 0;
+    border: 1px solid #e2e8f0;
+}
+
+.ev-date-day        { font-size: 13px; line-height: 1; margin-bottom: 6px; }
+.ev-date-number     { font-size: 22px; font-weight: 600; line-height: 1; margin-bottom: 6px; }
+.ev-date-month-year { font-size: 12px; line-height: 1; }
+
+.ev-event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 2px;
+}
+
+.ev-event-title { font-size: 20px; font-weight: 500; }
+.ev-event-dates { font-size: 18px; font-weight: 400; }
+.ev-event-price { font-size: 20px; font-weight: 500; }
+
+.ev-action-button {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 10px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.ev-action-button:hover { background-color: #f8fafc; }
+
+/* The source design had no small-screen handling; stack the row instead
+   of letting the button collide with the details. */
+@media (max-width: 700px) {
+    .ev-root { padding: 32px 20px; }
+    .ev-heading { font-size: 34px; }
+    .ev-category-pill { margin-bottom: 36px; font-size: 16px; }
+    .ev-event-row { flex-direction: column; align-items: flex-start; gap: 20px; }
+}
